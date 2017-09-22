@@ -19,6 +19,7 @@ package com.example.android.testing.espresso.web.BasicSample;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 import android.text.TextUtils;
@@ -63,4 +64,7 @@ public class WebViewActivity extends Activity {
         return !TextUtils.isEmpty(url) ? url : WEB_FORM_URL;
     }
 
+    private void getUserHandler() {
+        UserHandle handle = UserHandle.OWNER;
+    }
 }
